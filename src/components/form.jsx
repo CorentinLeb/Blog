@@ -19,7 +19,9 @@ const Form = () => {
                     <label htmlFor="post-content">Contenu : </label>
                     <textarea name="post-content" id="post-content" cols="30" rows="10" value={content} onChange={(e)=>setContent(e.target.value)}></textarea>
                     <label htmlFor="post-tags">Tag </label>
-                    <input type="text" name="post-tags" id="post-tags" value={tags} onChange={(e)=>setTags(e.target.value)}/>
+                    <input type="text" name="post-tags" id="post-tags" value={tags} onChange={(e)=>
+                        {let newTags = e.target.value.split(',');
+                            setTags(newTags)}}/>
                     <input type='sumit' value={submit} />
 
                 </div>
