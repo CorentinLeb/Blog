@@ -1,0 +1,32 @@
+export default [
+    {
+        id:1,
+        title:`Ceci est le titre de l'article 1`,
+        content:`Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam harum ipsum sed saepe debitis delectus magni? Enim maxime qui eos, optio fugit possimus nostrum aperiam perferendis vero reiciendis tempore necessitatibus quis! Quam similique tenetur praesentium excepturi dolor sint earum veniam nobis ipsum aperiam, maxime laborum architecto et non hic tempore fugit nisi, quas porro! Et sunt rerum accusantium, corrupti, illum, natus possimus quisquam repellendus nesciunt nostrum sit similique labore ipsum alias amet cupiditate rem excepturi fugit est? Velit placeat reiciendis sed nihil minima corrupti expedita, nam nobis sint laudantium voluptas obcaecati voluptatum repellendus aut recusandae nemo deleniti perspiciatis delectus totam sapiente molestiae modi sequi natus doloremque. Dignissimos iure placeat deserunt, in nam praesentium officiis dolor dolores voluptatum velit aspernatur hic, nihil voluptatibus? Autem possimus tempore suscipit vel, eligendi mollitia deleniti animi architecto facilis, alias voluptas fugit ducimus praesentium pariatur officia laboriosam dolore,m a odio nostrum dolores magnam dicta deserunt velit.`,
+        tags : ['techno','lifestyle','smart']
+    },
+    {
+        id:2,
+        title:`Ceci est le titre de l'article 2`,
+        content:`Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam harum ipsum sed saepe debitis delectus magni? Enim maxime qui eos, optio fugit possimus nostrum aperiam perferendis vero reiciendis tempore necessitatibus quis! Quam similique tenetur praesentium excepturi dolor sint earum veniam nobis ipsum aperiam, maxime laborum architecto et non hic tempore fugit nisi, quas porro! Et sunt rerum accusantium, corrupti, illum, natus possimus quisquam repellendus nesciunt nostrum sit similique labore ipsum alias amet cupiditate rem excepturi fugit est? Velit placeat reiciendis sed nihil minima corrupti expedita, nam nobis sint laudantium voluptas obcaecati voluptatum repellendus aut recusandae nemo deleniti perspiciatis delectus totam sapiente molestiae modi sequi natus doloremque. Dignissimos iure placeat deserunt, in nam praesentium officiis dolor dolores voluptatum velit aspernatur hic, nihil voluptatibus? Autem possimus tempore suscipit vel, eligendi mollitia deleniti animi architecto facilis, alias voluptas fugit ducimus praesentium pariatur officia laboriosam dolore,m a odio nostrum dolores magnam dicta deserunt velit.`,
+        tags : ['techno','lifestyle','smart']
+    },
+    {
+        id:3,
+        title:`Ceci est le titre de l'article 3`,
+        content:`Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam harum ipsum sed saepe debitis delectus magni? Enim maxime qui eos, optio fugit possimus nostrum aperiam perferendis vero reiciendis tempore necessitatibus quis! Quam similique tenetur praesentium excepturi dolor sint earum veniam nobis ipsum aperiam, maxime laborum architecto et non hic tempore fugit nisi, quas porro! Et sunt rerum accusantium, corrupti, illum, natus possimus quisquam repellendus nesciunt nostrum sit similique labore ipsum alias amet cupiditate rem excepturi fugit est? Velit placeat reiciendis sed nihil minima corrupti expedita, nam nobis sint laudantium voluptas obcaecati voluptatum repellendus aut recusandae nemo deleniti perspiciatis delectus totam sapiente molestiae modi sequi natus doloremque. Dignissimos iure placeat deserunt, in nam praesentium officiis dolor dolores voluptatum velit aspernatur hic, nihil voluptatibus? Autem possimus tempore suscipit vel, eligendi mollitia deleniti animi architecto facilis, alias voluptas fugit ducimus praesentium pariatur officia laboriosam dolore,m a odio nostrum dolores magnam dicta deserunt velit.`,
+        tags : ['techno','lifestyle','smart']
+    },
+    {
+        id:4,
+        title:`Ceci est le titre de l'article 5`,
+        content:`Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam harum ipsum sed saepe debitis delectus magni? Enim maxime qui eos, optio fugit possimus nostrum aperiam perferendis vero reiciendis tempore necessitatibus quis! Quam similique tenetur praesentium excepturi dolor sint earum veniam nobis ipsum aperiam, maxime laborum architecto et non hic tempore fugit nisi, quas porro! Et sunt rerum accusantium, corrupti, illum, natus possimus quisquam repellendus nesciunt nostrum sit similique labore ipsum alias amet cupiditate rem excepturi fugit est? Velit placeat reiciendis sed nihil minima corrupti expedita, nam nobis sint laudantium voluptas obcaecati voluptatum repellendus aut recusandae nemo deleniti perspiciatis delectus totam sapiente molestiae modi sequi natus doloremque. Dignissimos iure placeat deserunt, in nam praesentium officiis dolor dolores voluptatum velit aspernatur hic, nihil voluptatibus? Autem possimus tempore suscipit vel, eligendi mollitia deleniti animi architecto facilis, alias voluptas fugit ducimus praesentium pariatur officia laboriosam dolore,m a odio nostrum dolores magnam dicta deserunt velit.`,
+        tags : ['techno','lifestyle','smart']
+    },
+    {
+        id:5,
+        title:`Ceci est le titre de l'article 5`,
+        content:`Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam harum ipsum sed saepe debitis delectus magni? Enim maxime qui eos, optio fugit possimus nostrum aperiam perferendis vero reiciendis tempore necessitatibus quis! Quam similique tenetur praesentium excepturi dolor sint earum veniam nobis ipsum aperiam, maxime laborum architecto et non hic tempore fugit nisi, quas porro! Et sunt rerum accusantium, corrupti, illum, natus possimus quisquam repellendus nesciunt nostrum sit similique labore ipsum alias amet cupiditate rem excepturi fugit est? Velit placeat reiciendis sed nihil minima corrupti expedita, nam nobis sint laudantium voluptas obcaecati voluptatum repellendus aut recusandae nemo deleniti perspiciatis delectus totam sapiente molestiae modi sequi natus doloremque. Dignissimos iure placeat deserunt, in nam praesentium officiis dolor dolores voluptatum velit aspernatur hic, nihil voluptatibus? Autem possimus tempore suscipit vel, eligendi mollitia deleniti animi architecto facilis, alias voluptas fugit ducimus praesentium pariatur officia laboriosam dolore,m a odio nostrum dolores magnam dicta deserunt velit.`,
+        tags : ['techno','lifestyle','smart']
+    },
+]

@@ -1,0 +1,25 @@
+.article{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 40px auto;
+    text-align: left;
+    height:auto;
+    background-color:white;
+    border-radius:20px;
+    padding:20px;
+    align-items:flex-start
+
+
+}
+.title-article{
+
+
+}
+.content-article{
+    text-align: start;
+}
+.tags-article{
+    text-align: start;
+
+}

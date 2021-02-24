@@ -8,7 +8,7 @@ const Form = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setSubmit(true);
-        setPost(title,content,tags);
+        setPost({title,content,tags});
         console.log(post)
 
     }
