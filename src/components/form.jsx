@@ -32,7 +32,7 @@ const Form = () => {
                     <input type="text" name="post-tags" id="post-tags" value={tags} onChange={(e)=>
                         {let newTags = e.target.value.split(',');
                             setTags(newTags)}}/>
-                    <input type='submit' value='Go' />
+                    <input id='submit-btn' type='submit' value='creer le post !!!' />
 
                 </div>
 

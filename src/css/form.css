@@ -1,0 +1,33 @@
+.post-form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    height:auto;
+    background-color:white;
+    border-radius:20px;
+    padding:20px;
+
+
+}
+#post-title{
+    width:70%;
+    margin: auto;
+    text-align: start;
+
+}
+#post-content{
+    height: 30vh;
+    text-align: start;
+
+}
+#post-tags{
+    text-align: start;
+
+}
+#submit-btn{
+    width:20%;
+    margin: 20px auto 0;
+
+}
