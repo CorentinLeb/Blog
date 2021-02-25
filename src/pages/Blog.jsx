@@ -1,18 +1,29 @@
-import React from 'react'
+import React, { useState,useEffect } from 'react' 
 import '../css/blog.css'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Form from '../components/form'
 import Article from '../components/Article'
 import{NavLink} from'react-router-dom'
+import axios from 'axios';
 
- 
-const routes=[
-    {path: '/', name:"allAticle", Component: Article},
-    {path: '/form', name:"Form", Component: Form},
-  ]
+const url = "https://course-api.com/react-tours-project"
+
 
 
 const Blog = () => {
+  const [posts,setPosts] = useState([]);
+  async function getPosts() {
+    try {
+      const res = await axios.get(url);
+      setPosts(res.data);
+
+    } catch (error) {
+      console.error(error);
+    }
+  }
+  useEffect(()=>{
+    getPosts()
+  },[])
 
     return (
         
@@ -20,19 +31,22 @@ const Blog = () => {
         <>
             <Router>
             <h1>BLOG</h1>
-            <button><NavLink to="/">Les articles</NavLink></button>
+            <button><NavLink to="/blog">Les articles</NavLink></button>
 
-            <button><NavLink to="/form">creer un article</NavLink></button>
+            <button><NavLink to="/blog/form">creer un article</NavLink></button>
             <Switch>
-            {routes.map(({path, Component})=>(
-              <Route key={path} path={path} exact >
-                {()=>(
-                      <>
-                        <Component/>
-                      </>
-                )}
-              </Route>
-            ))};
+            <Route path="/blog" key="/blog" exact>
+              <Article posts={posts} />
+            </Route>
+            <Route path = {url} exact>
+              {console.log({url})}
+                            <div>
+                                Plus la
+                            </div>
+                        </Route>
+            <Route path="/blog/form" exact>
+              <Form/>
+              </Route> 
             </Switch>
             </Router>
 
