@@ -11,7 +11,7 @@ const Article = ({posts}) => {
         <>
         
         {posts.map((p) => {
-            const { id, name, info, price} = p;
+            const { id, title, content, tags} = p;
             const url = `/blog/${p.id}`
             
 
@@ -25,9 +25,9 @@ const Article = ({posts}) => {
                         </Route>
                     <Route path ='/blog' exact>
                 <div className="article" key={id} >
-                    <h2 className="title-article">{name}</h2>
-                    <p className="content-article">{info.substring(0,300)}...</p>
-                    <p className="tags-article">{price}</p>
+                    <h2 className="title-article">{title}</h2>
+                    <p className="content-article">{content.substring(0,300)}...</p>
+                    <p className="tags-article">{tags}</p>
                     <button><NavLink to={url}>Deja lu</NavLink></button>
                 </div>
                     </Route>

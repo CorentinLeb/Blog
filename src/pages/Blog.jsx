@@ -6,7 +6,7 @@ import Article from '../components/Article'
 import{NavLink} from'react-router-dom'
 import axios from 'axios';
 
-const url = "https://course-api.com/react-tours-project"
+const url = "http://localhost:3000/api/v1/posts"
 
 
 
@@ -16,6 +16,7 @@ const Blog = () => {
     try {
       const res = await axios.get(url);
       setPosts(res.data);
+      console.log(res.data)
 
     } catch (error) {
       console.error(error);
