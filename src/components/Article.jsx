@@ -27,7 +27,7 @@ const Article = ({posts}) => {
                 <div className="article" key={id} >
                     <h2 className="title-article">{title}</h2>
                     <p className="content-article">{content.substring(0,300)}...</p>
-                    <p className="tags-article">{tags}</p>
+                    <p className="tags-article">{tags.slice(' ')}</p>
                     <button><NavLink to={url}>Deja lu</NavLink></button>
                 </div>
                     </Route>

@@ -12,6 +12,7 @@ const url = "http://localhost:3000/api/v1/posts"
 
 const Blog = () => {
   const [posts,setPosts] = useState([]);
+  
   async function getPosts() {
     try {
       const res = await axios.get(url);

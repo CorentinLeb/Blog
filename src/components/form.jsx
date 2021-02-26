@@ -1,23 +1,48 @@
 import '../css/form.css'
-import React, { useState } from 'react'
+import React, { useState ,useEffect} from 'react'
+import axios from 'axios'
 
 
 
 const Form = () => {
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setSubmit(true);
-        setPost({title,content,tags});
-        console.log(post)
-
-    }
-
+    
     const [title,setTitle]= useState('');
     const [content,setContent]= useState('');
     const [tags,setTags]= useState([]);
     const [submit,setSubmit]= useState(false);
     const [post,setPost]= useState({})
+    function uploadData(){
+        const postUrl =  'http://localhost:3000/api/v1/posts';
+        axios.post(postUrl, post)
+        .then(function(response){
+            console.log(response)
+        })
+        .catch(function (error){
+            console.log(error.response.data);
+            console.log(error.response.status);
+        
+        })
+    }
+    useEffect(()=>{
+        console.log(post)
+        uploadData()
+    },[post]
+    )
+    
+    
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setSubmit(true);
+        setPost({
+            ...{title},
+            ...{content},
+            ...{tags}
+        });
+
+        console.log(post)
+
+    }
     
     
     return (
