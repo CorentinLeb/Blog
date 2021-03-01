@@ -12,8 +12,9 @@ const Form = () => {
     const [tags,setTags]= useState([]);
     const [submit,setSubmit]= useState(false);
     const [post,setPost]= useState({})
+
     function uploadData(){
-        const postUrl =  'https://shrouded-mountain-76274.herokuapp.com/api/v1/posts';
+        const postUrl =  'http://localhost:5000/api/v1/posts';
         axios.post(postUrl, post)
         .then(function(response){
             console.log(response)
@@ -31,7 +32,7 @@ const Form = () => {
     )
     
     
-    const handleSubmit = (e) => {
+    const handleSubmit  = (e) => {
         e.preventDefault();
         setSubmit(true);
         setPost({
@@ -40,7 +41,6 @@ const Form = () => {
             ...{tags}
         });
 
-        console.log(post)
 
     }
     
@@ -57,7 +57,7 @@ const Form = () => {
                     <input type="text" name="post-tags" id="post-tags" value={tags} onChange={(e)=>
                         {let newTags = e.target.value.split(',');
                             setTags(newTags)}}/>
-                    <input id='submit-btn' type='submit' value='creer le post !!!' />
+                    <input type='submit' value='creer le post !!!' />
 
                 </div>
 
