@@ -6,7 +6,7 @@ import Article from '../components/Article'
 import{NavLink} from'react-router-dom'
 import axios from 'axios';
 
-const url = "http://localhost:3000/api/v1/posts"
+const url = "https://shrouded-mountain-76274.herokuapp.com/api/v1/posts"
 
 
 

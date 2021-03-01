@@ -13,7 +13,7 @@ const Form = () => {
     const [submit,setSubmit]= useState(false);
     const [post,setPost]= useState({})
     function uploadData(){
-        const postUrl =  'http://localhost:3000/api/v1/posts';
+        const postUrl =  'https://shrouded-mountain-76274.herokuapp.com/api/v1/posts';
         axios.post(postUrl, post)
         .then(function(response){
             console.log(response)
